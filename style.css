@@ -1,0 +1,105 @@
+body{
+  font-family:'Poppins',sanserif;
+}
+.slider{
+  display:flex;  
+  flex-wrap:wrap;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+  background-image:linear-gradient(95deg, #fea764d1, 
+              rgb(0 0 0 / 77%)), url(https://images.pexels.com/photos/3714898/pexels-photo-3714898.jpeg);
+ background-repeat:no-repeat;    
+  background-size: cover;
+  background-position:center;  
+}
+
+.letfcont, .rightimg{
+  width:50%;
+}
+.letfcont{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+}
+span{
+  text-align:center;
+}
+.listcard{
+  display:flex;
+  justify-content:center;
+  align-itmes:center;
+  margin:30px 0px;
+}
+.card{
+  position:relative;
+  width:189px;  
+  height:210px;
+  margin:8px;
+  display:flex;
+  margin:4px;
+  overflow:hidden;
+  border-radius:20px;
+}
+img{
+  width:100%;  
+  object-fit:cover;
+  border-radius:20px;
+  transition:.6s ease-in-out;  
+}
+.card:hover img{
+  transform: scale(1.4); 
+  border-radius:5px;
+  transition:.3s ease;
+   border-radius:20px;  
+}
+.card:hover {
+  box-shadow: 1px 0px 12px #fea764d1;
+  transition:.1s ease;
+}
+h1{
+  color:#fff;
+  font-size:30px;
+}
+.tw{
+  color:#fff;
+}
+.desc{
+  position: absolute;
+  top: 0;  
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-size:19px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  border-radius:20px;
+}
+.flight {
+   background:linear-gradient(45deg, #00ff, transparent);
+}
+.bus{
+  background:linear-gradient(45deg, #ff0000, transparent);
+}
+.hotel{
+   background:linear-gradient(45deg, #090000, transparent);
+}
+.recharge{
+  background:linear-gradient(45deg, #eb0988, transparent);
+}
+
+@media(max-width:768px){
+  .slider {
+    flex-direction:column;
+    text-align:center;
+  }
+  .listcard{
+    flex-direction:column;
+  }
+}
